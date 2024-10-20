@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSmart Nexus Control Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">EcoSmart Nexus</h1>
+        <ul class="nav-links">
+            <li><a href="#energy">Energy Management</a></li>
+            <li><a href="#climate">Climate Adaptation</a></li>
+            <li><a href="#air-quality">Air Quality</a></li>
+            <li><a href="#user-feedback">User Feedback</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">🌙</label>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>EcoSmart Nexus Control Hub</h1>
+        <p>Your smart solution for sustainable living and energy efficiency.</p>
+        <button class="cta-button">Get Started</button>
+    </header>
+
+    <div class="dashboard">
+        <section id="energy" class="card">
+            <h2>Energy Management</h2>
+            <div class="chart-container">
+                <canvas id="energyChart"></canvas>
+            </div>
+            <p>Solar Power: <span id="solar">Loading...</span> kW</p>
+            <p>Wind Power: <span id="wind">Loading...</span> kW</p>
+            <p>Geothermal: <span id="geothermal">Loading...</span> kW</p>
+            <p>Energy Consumption: <span id="consumption">Loading...</span> kW</p>
+            <p>Forecast Consumption: <span id="forecast">Loading...</span> kW</p>
+            <button onclick="optimizeEnergy()" class="cta-button">Optimize Energy</button>
+        </section>
+
+        <section id="climate" class="card">
+            <h2>Climate Adaptation</h2>
+            <p>Temperature: <span id="temperature">Loading...</span> °C</p>
+            <p>Condition: <span id="condition">Loading...</span></p>
+            <p>Resilience Tips: <span id="tips">Stay hydrated!</span></p>
+        </section>
+
+        <section id="air-quality" class="card">
+            <h2>Air Quality Management</h2>
+            <p>CO2 Levels: <span id="co2">Loading...</span> ppm</p>
+            <p>PM2.5 Levels: <span id="pm25">Loading...</span> µg/m³</p>
+            <div class="alert" id="alert"></div>
+        </section>
+
+        <section id="user-feedback" class="card">
+            <h2>User Feedback</h2>
+            <form id="feedbackForm">
+                <textarea id="feedback" placeholder="Provide your feedback here..."></textarea>
+                <button type="submit" class="cta-button">Submit Feedback</button>
+            </form>
+        </section>
+    </div>
+    <div class="container">
+        <h1>EcoSmart Nexus Control Hub</h1>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        
+        <div class="chart-container">
+            <canvas id="energyChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="weatherChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="airQualityChart"></canvas>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 EcoSmart Nexus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

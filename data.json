@@ -1,0 +1,16 @@
+{
+    "energy": {
+        "solar": 40,
+        "wind": 25,
+        "geothermal": 15,
+        "consumption": 70
+    },
+    "weather": {
+        "temperature": 28,
+        "condition": "Sunny"
+    },
+    "airQuality": {
+        "CO2": 350,
+        "PM2_5": 20
+    }
+}

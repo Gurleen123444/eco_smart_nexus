@@ -1,0 +1,14 @@
+{
+    "name": "ecosmart-nexus",
+    "version": "1.0.0",
+    "description": "EcoSmart Nexus Control Hub",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "chart.js": "^4.4.5",
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
+    }
+}
